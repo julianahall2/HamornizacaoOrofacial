@@ -19,7 +19,10 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/andrea.jpg";
+import { title } from "process";
+import { deserialize } from "v8";
+import { url } from "inspector";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,27 +34,45 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Toxina Botulíca",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+      "Reduz rugas dinâmicas e suaviza linhas de expressão para um visual rejuvenescido. Atua bloqueando sinais nervosos que causam contrações musculares.",
     url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Preenchimento com Acido Hialurônico",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+      "Restaura volumes faciais e aprimora os contornos do rosto com resultados naturais. Proporciona hidratação e elasticidade, harmonizando a estética facial.",
     url: "https://github.com/microsoft/web-dev-for-beginners",
   },
   {
-    title: "My Resume Site",
+    title: "Bioestimulador de Colageno",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+      "Estimula a produção natural de colágeno, melhorando a firmeza e a textura da pele. Resulta em um aspecto mais jovem e revitalizado, com benefícios duradouros.",
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Biorremodelador Tecidual ",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
+      "Promove a reestruturação dos tecidos, redefinindo os contornos faciais. Melhora a qualidade da pele de forma natural, proporcionando resultados harmoniosos e duráveis.",
+    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+  },
+  {
+    title: "Microagulhamento com Drug Delivery",
+    description:
+      "Estimula a produção de colágeno e potencializa a absorção de ativos na pele. Combina microagulhamento com a aplicação de substâncias que revitalizam a aparência.",
+    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+  },
+  {
+    title: "Fios de PDO",
+    description:
+      "Oferece um efeito lifting não cirúrgico, elevando e sustentando a pele. Estimula a síntese de colágeno, proporcionando um rejuvenescimento gradual e natural.",
+    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+  },
+  {
+    title: "Peelings Químicos",
+    description:
+      "Promovem a renovação celular, melhorando a textura e o tom da pele. São eficazes no tratamento de manchas, acne e sinais de envelhecimento para uma pele luminosa.",
     url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
   },
 ];
@@ -59,7 +80,7 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ textAlign: "center" }}>Servicos</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img

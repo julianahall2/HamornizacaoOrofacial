@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import whatsAppIcon from "../images/socials/whatsapp.svg";
 
 /**
  * 💡 Learning resources
@@ -38,6 +39,7 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
+    WhatsApp,
   } = props;
 
   return (
@@ -112,6 +114,15 @@ const Footer = (props) => {
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
+        {WhatsApp && (
+         <a
+         href={`https://www.youtube.com/c/${WhatsApp}`}
+         target="_blank"
+         rel="noopener noreferrer"
+       >
+         <img src={whatsAppIcon} alt="YouTube" className="socialIcon" />
+        </a>
+        )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
         Created by {name}
@@ -135,7 +146,7 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
-
+  WhatsApp: PropTypes.string,
 };
 
 export default Footer;
